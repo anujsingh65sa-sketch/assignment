@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Club</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Tech Club</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="register.html">Register</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>Learn. Code. Innovate.</h2>
+            <p>Join our Tech Club and explore the world of technology.</p>
+            <a class="btn" href="register.html">Join Now</a>
+        </section>
+
+        <section class="card">
+            <h2>Upcoming Events</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Event</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Coding Competition</td>
+                        <td>10 November 2026</td>
+                        <td>10 AM</td>
+                    </tr>
+                    <tr>
+                        <td>Web Development</td>
+                        <td>15 November 2026</td>
+                        <td>11 AM</td>
+                    </tr>
+                    <tr>
+                        <td>AI Workshop</td>
+                        <td>20 November 2026</td>
+                        <td>12 PM</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="card">
+            <h2>About Our Club</h2>
+            <p>We help students learn coding, web development and AI.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Tech Club | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+:root {
+    --primary: #123c69;
+    --secondary: #2a9d8f;
+    --background: #f0f5fa;
+    --text: #222222;
+    --white: #ffffff;
+    --spacing: 20px;
+}
+
+/* Universal selector */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Element selector */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+/* Header */
+header {
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: var(--spacing);
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    margin: 10px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+/* ID selector */
+#hero {
+    background-color: var(--secondary);
+    color: var(--white);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#hero h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* Class selector */
+.card {
+    background-color: var(--white);
+    margin: var(--spacing);
+    padding: var(--spacing);
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #00000015;
+}
+
+.card h2 {
+    color: var(--primary);
+    margin-bottom: 12px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary);
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    background-color: #0b2545;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+footer {
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: center;
+    padding: 15px;
+}
+</html>
